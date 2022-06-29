@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat&display=swap');
+
+.container{
+	padding: 10px;
+	border: solid 3px black;
+	background-color: white;
+	display: flex;
+}
+.box{
+	padding: 20px;
+	text-align: center;
+	color: black;
+	font-size: 2rem;
+	font-family:'Montserrat', sans-serif;
+}
+
+
+/* POR SEPARADO
+.flex-direction{
+	flex-direction: row; 
+}
+.flex-wrap{
+	flex-wrap: wrap;
+} */ 
+.flex-flow{
+	flex-flow: row ;
+}
+.justify-content{
+	justify-content: space-around;
+}
+.align-items{
+	align-items: flex-start;
+}
+.align-content{
+	align-content: space-evenly;
+}
+.align-self{
+	align-content: center;
+}

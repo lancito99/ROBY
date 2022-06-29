@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(../img/griego.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    grid-template-areas: "head head"
+        "main main"
+        "foot  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+#page>header {
+    grid-area: head;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(122deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 16%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+
+#page>main {
+    grid-area: main;
+    padding: 0 60px;
+    margin-bottom: 120px;
+
+}
+
+#page>footer {
+    grid-area: foot;
+    background-color: rgb(6, 128, 209);
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    padding: 25px;
+    width: 100%;
+    bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: black
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li a:hover {
+    color: grey;
+    font-weight: 600;
+}
+
+main .imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .imgContainer #logo {
+    width: 200px;
+}
+
+#torta {
+
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 25px 0px;
+}
+
+#productos h1,
+#productos h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, .7);
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+}
+
+#productos .galeria {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+#productos .galeria figure {
+    text-align: center;
+    flex-shrink: 1;
+}
+
+#productos .galeria figure img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 20rem;
+    height: 20rem;
+}
+
+#productos .galeria figure figcaption {
+    font-size: 2.5rem;
+    color: black;
+    padding: 10px 0;
+    background-color: white;
+}
+
+#productos .galeria p.precio {
+    color: blue;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+footer nav {
+    display: flex;
+}
+
+footer nav ul {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
+#contenedorContacto {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+}
+
+#contacto {
+    width: 50%;
+    color: #FFFFFF;
+    background: rgb(255, 102, 0);
+    background: linear-gradient(122deg, rgba(255, 102, 0, 1) 0%, rgba(121, 80, 9, 1) 50%, rgba(241, 255, 0, 1) 100%);
+}
+
+#contacto fieldset {
+    padding: 20px;
+    display: flex;
+}
+
+#contacto fieldset .separadorInputs {
+    margin-bottom: 10px;
+}
+
+@media (max-width:1440px) {
+    .galeria {
+        flex-direction: column;
+    }
+}
+@media (max-width:520px) {
+    * {
+        font-size: 60%;
+        
+    }
+    #torta {
+        display: none;
+    }
+    
+}
+
+@media (max-width:900px) {
+    #torta {
+        width: 100%;
+    }
+}
+@media (max-width:650px) {
+    #torta {
+        object-position: -50px 0px;
+    }
+}
+
